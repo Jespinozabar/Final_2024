@@ -197,6 +197,24 @@ gayfish
 
  The p-value displayed above is at 7e-07. This is a large number.Seeing this number means that these results are likely to occur by chance. 
 
+```{r}
+effect <- gayfish$p.value/(gayfish$p.value +1)
+effectivenessgay = gayfish$estimate/(gayfish$estimate +1)*100
+print(effectivenessgay)
+```
+
+```{r}
+low=(gayfish$conf.int[1]/(gayfish$conf.int[1] +1))*100
+hi=(gayfish$conf.int[2]/(gayfish$conf.int[2] +1))*100
+options(digits=2)
+```
+
+## Effectiveness Confidence Interval `r low`  to `r hi`
+
+The vaccine effectiveness for the LGBTQ+ group is shown above. Since the effectiveness percentage is over 50%, it indicates that the vaccine provides strong protection against COVID-19. Based on the confidence interval provided, we can confidently say the vaccine helps prevent infection in this group.
+
+The odds ratio gives a measure of how much the vaccine reduces the risk of getting COVID-19. For LGBTQ+ individuals, the odds ratio is about 80, with a confidence interval ranging from 68.99 to 89.88, further supporting the vaccine’s significant effectiveness.
+
 ## Druggies
 
 
