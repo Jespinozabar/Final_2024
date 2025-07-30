@@ -279,3 +279,11 @@ Above is the effectiveness for the covid-19 vaccine for drugusers. If the effect
 The odds ratio is approximately how effective the vaccine is. The odds ratio for the drugusers can be seen above as 7. The effectiveness confidence interval for the drugusers is 2.65 to 17.86 .
 
 # Overall Results and Conclusions
+
+The COVID-19 vaccine demonstrated effectiveness in preventing infection among men, with an effectiveness rate of r effectivenessMales. Similarly, the vaccine provided protection for women, showing an effectiveness of r effectivenessFemales. The vaccine was most effective for individuals identifying as gay, with an effectiveness of r effectivenessgay.
+
+However, the vaccine did not offer sufficient protection for drug users. In fact, drug users who received the vaccine were more likely to contract COVID-19 compared to those who received a placebo, with an effectiveness of r effectivenessDruguser indicating poor vaccine performance in this group.
+
+Based on these findings, vaccination is not recommended for drug users at this time. Conversely, for men, women, and individuals identifying as gay (non-drug users), the vaccine has proven to be effective.
+
+Statistical analysis rejects the null hypothesis—stating no difference in vaccine impact—for men, women, and gay individuals, supporting the conclusion that the vaccine is effective in these groups. However, for drug users, the null hypothesis cannot be rejected, indicating the vaccine did not provide significant protection.
