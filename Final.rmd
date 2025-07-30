@@ -66,6 +66,9 @@ male_fish
 ```
 
 
+The inferential analysis shows that the difference in COVID-19 infection rates between vaccinated males and those who received the placebo is statistically significant. This means that the lower rate of infections in the vaccinated group is very unlikely to have happened by chance. In other words, the vaccine genuinely helps protect males from contracting COVID-19. These results support the conclusion that vaccination is effective for reducing the risk of infection in the male population.
+
+
 ## Females
 
 
