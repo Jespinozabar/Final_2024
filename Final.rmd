@@ -68,6 +68,16 @@ male_fish
 
 The inferential analysis shows that the difference in COVID-19 infection rates between vaccinated males and those who received the placebo is statistically significant. This means that the lower rate of infections in the vaccinated group is very unlikely to have happened by chance. In other words, the vaccine genuinely helps protect males from contracting COVID-19. These results support the conclusion that vaccination is effective for reducing the risk of infection in the male population.
 
+## Effectiveness Confidence Interval
+
+```{r}
+effectiveness_males <- male_fish$estimate / (male_fish$estimate + 1) * 100
+low_male <- (male_fish$conf.int[1] / (male_fish$conf.int[1] + 1)) * 100
+hi_male <- (male_fish$conf.int[2] / (male_fish$conf.int[2] + 1)) * 100
+
+```
+
+Among male participants, the data suggests the vaccine was not very effective in preventing COVID-19 infections. The p-value from Fisher's test indicates a statistically significant difference, but the effectiveness was only about r round(effectiveness_males, 2)%, with a confidence interval ranging from r round(low_male, 2)% to r round(hi_male, 2)%. Because this confidence interval is mostly below 50%, the vaccine may not provide reliable protection for men.
 
 ## Females
 
