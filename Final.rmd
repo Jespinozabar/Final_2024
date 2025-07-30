@@ -258,4 +258,6 @@ Druguserfish <- fisher.test(table4)
 Druguserfish
 ```
 
+3e-12 is the p-value shown above. This is a tiny figure.This number indicates that it is unlikely that these outcomes happened by accident.
+
 # Overall Results and Conclusions
