@@ -81,6 +81,27 @@ Among male participants, the data suggests the vaccine was not very effective in
 
 ## Females
 
+## Barplot
+
+```{r}
+# Sample data for females: counts of COVID cases by group
+female_data <- data.frame(
+  Group = c("Vaccine", "Placebo"),
+  Cases = c(10, 25)   # replace with your actual numbers
+)
+
+# Basic barplot
+barplot(
+  female_data$Cases,
+  names.arg = female_data$Group,
+  col = c("skyblue", "pink"),
+  main = "COVID-19 Cases in Females by Group",
+  ylab = "Number of Cases",
+  ylim = c(0, max(female_data$Cases) + 5)
+)
+
+```
+
 
 ## LGBTQ
 
