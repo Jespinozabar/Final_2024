@@ -195,6 +195,8 @@ gayfish <- fisher.test(table3)
 gayfish
 ```
 
+ The p-value displayed above is at 7e-07. This is a large number.Seeing this number means that these results are likely to occur by chance. 
+
 ## Druggies
 
 
