@@ -176,6 +176,14 @@ basicCC + geom_bar(stat="identity", position = "dodge")
 
 This chart shows COVID-19 infection rates among the LGBTQ+ group based on whether individuals received the vaccine or a placebo. About 20% of those vaccinated ended up contracting COVID-19, compared to nearly 80% of those who received the placebo. This clear difference suggests that the vaccine provides significant protection against the virus within this community.
 
+#### Numerical Results
+
+```{r}
+table3 <- xtabs(~infected + treatment, data=gay)
+rowPerc(table3)
+colPerc(table3)
+```
+
 ## Druggies
 
 
