@@ -126,8 +126,7 @@ The numerical results show that a significantly lower percentage of females who 
 ## Inferential results
 
 ```{r}
-chisq.test(table1)
-chisqtestGC(table1)
+fisher.test(table1)
 Femalefish <- fisher.test(table1)
 Femalefish
 ```
