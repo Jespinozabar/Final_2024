@@ -184,6 +184,8 @@ rowPerc(table3)
 colPerc(table3)
 ```
 
+The numerical results show the proportion of LGBTQ+ individuals who contracted COVID-19 after receiving either the vaccine or the placebo. Around 80% of those who took the placebo became infected, while only about 20% of vaccinated individuals caught the virus. These results highlight the vaccine’s strong effectiveness in protecting the LGBTQ+ community, showing that vaccination significantly reduces the risk of infection compared to the placebo.
+
 ## Druggies
 
 
