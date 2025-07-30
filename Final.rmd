@@ -123,6 +123,17 @@ colPerc(table1)
 
 The numerical results show that a significantly lower percentage of females who received the vaccine got infected with COVID-19 compared to those who received the placebo. Specifically, the vaccine group had a noticeably smaller infection rate, while the placebo group showed higher rates of infection. This suggests that the vaccine was effective in reducing the risk of infection among females.
 
+## Inferential results
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+Femalefish <- fisher.test(table1)
+Femalefish
+```
+
+The p-value displayed above is at 2.2e-16. This is an ok number.Seeing this number means that these results are likely to occur by chance. 
+
 ## LGBTQ
 
 
