@@ -247,7 +247,6 @@ rowPerc(table4)
 colPerc(table4)
 ```
 
-
-
+The percentages of drug users who contracted COVID-19 after receiving the vaccine and a placebo are displayed in these numerical results. Approximately 91.7% of drug users who received the vaccine contracted COVID-19, whereas 8.3% of drug users who received a placebo did so. The vaccine is not advised because it is obviously ineffective at preventing COVID-19 in drug users. The risk of getting COVID-19 was higher for those who received the vaccine.
 
 # Overall Results and Conclusions
