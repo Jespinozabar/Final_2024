@@ -53,6 +53,7 @@ colPerc(male_table)
 
 ```
 
+The numbers show the males who got the vaccine and caught COVID way less often than those who took the placebo. There’s a clear gap between the two groups, which means the vaccine really helped protect the males from getting sick.
 
 ## Females
 
