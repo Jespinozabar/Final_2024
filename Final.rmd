@@ -44,6 +44,16 @@ ggplot(male_summary, aes(x = infected, y = prcnt * 100, fill = treatment)) +
 
 This boxplot shows how infection rates look for the males in each group. You can see the middle value and how spread out the results are. It helps us get a quick idea if the vaccine made a difference or not for the guys by comparing the two groups side by side. The infection rates among males who either received the vaccine or a placebo. About 25% of the males who got the vaccine still contracted COVID-19, while approximately 65% of those who took the placebo became infected. This suggests that the vaccine was effective in reducing the risk of getting COVID-19 for the males in this study.
 
+## Numerical results 
+
+```{r}
+male_table <- xtabs(~ infected + treatment, data = males)
+rowPerc(male_table)
+colPerc(male_table)
+
+```
+
+
 ## Females
 
 
