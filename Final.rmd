@@ -26,6 +26,26 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 
 ## Males
 
+## Barplot
+
+```{r}
+males <- filter(FinalData, sex == "M")
+
+male_summary <- males %>%
+  group_by(infected, treatment) %>%
+  summarize(count = n()) %>%
+  mutate(prcnt = count / sum(count))
+
+ggplot(male_summary, aes(x = infected, y = prcnt * 100, fill = treatment)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Infection Rate by Treatment (Males)", y = "Percentage", x = "Covid Infection Status")
+
+```
+
+
+###Barplot
+
+
 
 ## Females
 
