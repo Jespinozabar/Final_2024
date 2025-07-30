@@ -104,6 +104,23 @@ barplot(
 
 The barplot for females shows the percentage of participants who contracted COVID-19 after receiving either the vaccine or the placebo. From the plot, it’s clear that a smaller proportion of vaccinated females got COVID-19 compared to those who took the placebo. This suggests the vaccine was effective in reducing infection rates among female participants.
 
+## Numerical results 
+
+```{r}
+Females <- FinalData %>% filter(sex == "Female")
+```
+
+```{r}
+# Create contingency table
+table1 <- xtabs(~infected + treatment, data = Females)
+
+# View row percentages
+rowPerc(table1)
+
+# View column percentages
+colPerc(table1)
+```
+
 ## LGBTQ
 
 
