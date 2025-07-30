@@ -239,4 +239,15 @@ basicCC + geom_bar(stat="identity", position = "dodge")
 This plot represents the population of drugusers and their relationship to the contraction of covid-19 by either taking the vaccine or the placebo.
 The plot above shows that roughly 95% of the people that took the vaccine did in fact get covid-19, while approximately 8% of the people taking the placebo contracted covid-19. A substantially higher percentage of people who took vaccine contracted covid-19 versus those who were only given the placebo. The vaccine appears to be ineffective in the protection against covid-19.  
 
+#### Numerical Results 
+
+```{r}
+table4<- xtabs(~infected + treatment, data=Druguser)
+rowPerc(table4)
+colPerc(table4)
+```
+
+
+
+
 # Overall Results and Conclusions
