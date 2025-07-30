@@ -102,6 +102,7 @@ barplot(
 
 ```
 
+The barplot for females shows the percentage of participants who contracted COVID-19 after receiving either the vaccine or the placebo. From the plot, it’s clear that a smaller proportion of vaccinated females got COVID-19 compared to those who took the placebo. This suggests the vaccine was effective in reducing infection rates among female participants.
 
 ## LGBTQ
 
