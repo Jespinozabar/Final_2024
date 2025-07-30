@@ -134,6 +134,24 @@ Femalefish
 
 The p-value displayed above is at 2.2e-16. This is an ok number.Seeing this number means that these results are likely to occur by chance. 
 
+```{r}
+effect <- Femalefish$p.value/(Femalefish$p.value +1)
+effectivenessFemales = Femalefish$estimate/(Femalefish$estimate +1)*100
+print(effectivenessFemales)
+```
+
+```{r}
+low=(Femalefish$conf.int[1]/(Femalefish$conf.int[1] +1))*100
+hi=(Femalefish$conf.int[2]/(Femalefish$conf.int[2] +1))*100
+options(digits=2)
+```
+
+## Effectiveness Confidence Interval `r low`  to `r hi`
+
+The data above shows how well the COVID-19 vaccine works for females. When the effectiveness exceeds 50%, it indicates that the vaccine provides good protection. Given the confidence interval shown, we can confidently say the vaccine helps reduce the risk of COVID-19 infection among females.
+
+The odds ratio gives an estimate of the strength of this protection. For females, the odds ratio is about 74, with a confidence interval ranging from 68.85 to 78.32, highlighting strong vaccine effectiveness.
+
 ## LGBTQ
 
 
